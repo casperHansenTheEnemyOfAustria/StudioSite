@@ -1,0 +1,167 @@
+*{
+    overflow-x: hidden;
+}
+
+body{
+    width:96vw;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.header{
+    width:100%;
+}
+.intro{
+    width:100%;
+}
+
+.owners{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    justify-content: space-between;
+}
+.owner{
+   display:flex;
+   position:relative;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 1vw;
+   margin-bottom: 1vw;
+   /* background-color:#ede7dd; */
+   background:linear-gradient(0deg, rgb(36, 35, 34) 0%, rgba(237,231,221,1) 100%),  
+   url("../img/FAST.jpg");
+   background-repeat: no-repeat;
+   background-size:cover;
+   background-blend-mode: multiply;
+   -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    width:89vw;
+    height: 55vh;
+    padding: 3vw;
+    overflow:hidden;
+}
+
+.owner:hover{
+    width:91vw;
+   background:linear-gradient(0deg, rgb(216, 164, 137) 0%, rgba(237,231,221,1) 100%),  
+   url("../img/FAST.jpg");
+   background-repeat: no-repeat;
+   background-size:cover;
+}
+
+.info{
+    margin-top: auto;
+    margin-right: auto;
+}
+
+h2{
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-size: 8vw;
+    color: whitesmoke; 
+    text-align: center;
+}
+
+h3{
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-size: 6vw;
+    color: whitesmoke;
+}
+p{
+    color: whitesmoke; 
+    font-size: 5vw;
+}
+a{
+    text-decoration: none;
+}
+
+.gear{
+    display:grid;
+    grid-template-areas: 
+    "a1 a2"
+    "a3 a4";
+    width:100%;
+    /* padding: 3vw; */
+}
+.mics{
+    grid-area:a1 ;
+}
+.mics>div{
+    background:linear-gradient(0deg, rgb(36, 35, 34) 0%, rgba(237,231,221,1) 100%),  
+   url("../img/FAST.jpg");
+   background-repeat: no-repeat;
+   background-size:cover;
+   background-blend-mode: multiply;
+   -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    height:46vw;
+    width:46vw;
+    margin:1vw;
+}
+.amps{
+    grid-area:a2 ;
+}
+.amps>div{
+    background:linear-gradient(0deg, rgb(36, 35, 34) 0%, rgba(237,231,221,1) 100%),  
+   url("../img/FAST.jpg");
+   background-repeat: no-repeat;
+   background-size:cover;
+   background-blend-mode: multiply;
+   -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    height:46vw;
+    width:46vw;
+    margin:1vw;
+}
+.outboard{
+    grid-area:a3 ;
+}
+.outboard>div{
+    background:linear-gradient(0deg, rgb(36, 35, 34) 0%, rgba(237,231,221,1) 100%),  
+   url("../img/FAST.jpg");
+   background-repeat: no-repeat;
+   background-size:cover;
+   background-blend-mode: multiply;
+   -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    height:46vw;
+    width:46vw;;
+    margin:1vw;
+}
+.drums{
+    grid-area:a4 ;
+}
+.drums>div{
+    background:linear-gradient(0deg, rgb(36, 35, 34) 0%, rgba(237,231,221,1) 100%),  
+   url("../img/FAST.jpg");
+   background-repeat: no-repeat;
+   background-size:cover;
+   background-blend-mode: multiply;
+   -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    height:46vw;
+    width:46vw;
+    margin:1vw;
+}
+
+.gi:hover{
+    background:
+   url("../img/FAST.jpg");
+   background-repeat: no-repeat;
+   background-size:cover;
+   background-blend-mode: multiply;
+   -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    height:47vw;
+    width:47vw;
+    margin:1vw;
+    overflow:hidden;
+}
