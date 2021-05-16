@@ -8,6 +8,7 @@ body{
     flex-direction: column;
     justify-content: center;
     overflow-x: hidden;
+    background:#564E58;
 }
 
 .header{
@@ -40,7 +41,7 @@ body{
     -moz-border-radius: 10px;
     border-radius: 10px;
     width:89vw;
-    height: 55vh;
+    height: 46vw;
     padding: 3vw;
     overflow:hidden;
 }
@@ -61,22 +62,25 @@ body{
 h2{
     font-family: Georgia, Times, 'Times New Roman', serif;
     font-size: 8vw;
-    color: whitesmoke; 
+    color: #F2EFE9; 
     text-align: center;
 }
 
 h3{
     font-family: Georgia, Times, 'Times New Roman', serif;
     font-size: 6vw;
-    color: whitesmoke;
+    color: #F2EFE9;
 }
 p{
-    color: whitesmoke; 
+    color: #F2EFE9; 
     font-size: 5vw;
 }
 a{
     text-decoration: none;
 }
+/* .mainHead{
+    color: #;
+} */
 
 .gear{
     display:grid;
@@ -149,6 +153,11 @@ a{
     height:46vw;
     width:46vw;
     margin:1vw;
+}
+
+.gi{
+    display: flex;
+    justify-content: center;
 }
 
 .gi:hover{
