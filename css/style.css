@@ -78,7 +78,7 @@ h3{
 }
 p{
     color: #F2EFE9; 
-    font-size: 5vw;
+    font-size: 4.5vw;
 }
 a{
     text-decoration: none;
@@ -176,9 +176,13 @@ a{
     margin:0.5vw;
     overflow:hidden;
 }
+.placeBody{
+    background-color:#f2efe9 ;
+    height:30vh;
+}
 
 @media only screen and (max-height: 2559px) and (min-width:1270px){
-    .gear, .owners, .intro{
+    .gear, .owners, .intro, .imageSlider{
         width:50%; 
     }
     .gi{
