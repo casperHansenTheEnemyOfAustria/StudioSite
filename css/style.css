@@ -2,13 +2,22 @@ body{
     overflow-x: hidden;
 }
 
+html{
+    overflow-x: hidden;
+}
+
 body{
     width:100%;
     display:flex;
     flex-direction: column;
     justify-content: center;
     overflow-x: hidden;
-    background:#744f22;
+    background:#0f6e27;
+    background-image: url("../img/netbg.png");
+    background-repeat: repeat;
+    background-size: 80%;
+    background-position: center;
+    background-attachment: fixed;
     margin:0;
 }
 
@@ -74,7 +83,7 @@ h2{
 
 h3{
     font-family: Georgia, Times, 'Times New Roman', serif;
-    font-size: 6vw;
+    font-size: 7vw;
     color: #F2EFE9;
 }
 p{
@@ -91,28 +100,29 @@ a{
 .gear{
     display:grid;
     grid-template-areas: 
-    "h1 h1" 
     "s2 s1"
     "s2 s4"
     "s3 s4";
 
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 4fr 4fr 4fr;
+    grid-template-rows: 1fr 1fr 1fr;
     
     width:100%;
     /* padding: 3vw; */
-    margin-top: 7vh;
+    
     /* margin-left: 7vw; */
     margin-right: 7vw;
-    height: 300vh;
+    /* height: 300vh; */
 }
 
-.gear .mainHead{
-    grid-area: h1;
+.gearHeader{
+
     margin-left: auto;
     margin-right: auto;
     text-align: left;
-    height: 5vh;
+    /* height: 5vh; */
+    margin-bottom: 2vh;
+    margin-top: 15vh;
 }
 .mics{
     grid-area:s1 ;
@@ -146,12 +156,12 @@ a{
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
-    padding: 15px;
+    padding: 2px;
 }
 
 .gi h4{
     font-family: Georgia, Times, 'Times New Roman', serif;
-    font-size: 40px;
+    font-size: 6vw;
     color: #f2efe9; 
     margin-top: 0;
     margin-bottom: 0;
@@ -159,14 +169,14 @@ a{
 
 li{
     font-family: Georgia, Times, 'Times New Roman', serif;
-    font-size: 40px;
+    font-size: 30px;
     color: #f2efe9; 
     margin-top: 0;
     margin-bottom: 0;
 }
 
 li p{
-    font-size: 30px;
+    font-size: 4vw;
 }
 .placeBody{
     background-color:#f2efe9 ;
@@ -221,6 +231,18 @@ li p{
     }
     h3{
         font-size: 3vw;
+    }
+    .gi h4{
+        font-size: 2vw;
+    }
+
+
+    li{
+        font-size: 2vw;
+        transform: scale(0.5);
+    }
+    li p{
+        font-size: 2vw;
     }
     p{
         font-size: 2vw
@@ -345,3 +367,12 @@ li p{
     from {opacity: .4}
     to {opacity: 1}
   }
+
+.onscroll.animation{
+    transform: scale(1);
+    transition: transform 0.25s 0s ease-in;
+}
+
+.onscroll{
+    transform: scale(0.5);
+}
