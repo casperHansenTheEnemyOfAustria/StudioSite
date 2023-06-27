@@ -21,11 +21,15 @@ body{
     margin:0;
 }
 
-.header{
+header{
     width:100%;
+    background-color: #031808;
+    height: 10vh;
+    position: sticky;
+    top:0;
 }
 
-.intro{
+.studioIntro{
     width:90%;
     margin-left: auto;
     margin-right: auto;
@@ -183,9 +187,17 @@ li p{
     height:auto;
     display: flex;
 }
-
+.aboutMe{
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    display: flex;
+    flex-direction: column;
+}
 @media only screen and (max-height: 2559px) and (min-width:1270px){
-    .owners, .intro{
+    .owners, .studioIntro, .aboutMe{
         width:50%; 
     }
 
@@ -233,20 +245,21 @@ li p{
         font-size: 3vw;
     }
     .gi h4{
-        font-size: 2vw;
+        font-size: 3vw;
     }
 
 
     li{
         font-size: 2vw;
-        transform: scale(0.5);
     }
     li p{
-        font-size: 2vw;
+        font-size: 2.5vw;
     }
     p{
         font-size: 2vw
     }
+
+
 }
 * {box-sizing:border-box}
 
@@ -369,10 +382,10 @@ li p{
   }
 
 .onscroll.animation{
-    transform: rotate(0turn);
-    transition: transform 0.25s 0s ease-in;
+    opacity: 1;
+    transition: opacity 0.25s 0s ease-in;
 }
 
 .onscroll{
-    transform: rotate(500turn);
+    opacity: 0;
 }
