@@ -89,6 +89,8 @@ h3{
     font-family: Georgia, Times, 'Times New Roman', serif;
     font-size: 7vw;
     color: #F2EFE9;
+    margin-block-start: 0;
+        margin-block-end: 1vh;
 }
 p{
     color: #F2EFE9; 
@@ -96,20 +98,23 @@ p{
 }
 a{
     text-decoration: none;
+    /* position: relative; */
+    z-index: 0;
 }
 /* .mainHead{
     color: #;
 } */
 
 .gear{
-    display:grid;
-    grid-template-areas: 
-    "s2 s1"
+    display:flex;
+    flex-direction: column;
+    /* grid-template-areas: 
+    "s1 s1"
     "s2 s4"
     "s3 s4";
 
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr; */
     
     width:100%;
     /* padding: 3vw; */
@@ -117,6 +122,7 @@ a{
     /* margin-left: 7vw; */
     margin-right: 7vw;
     /* height: 300vh; */
+    justify-content: space-evenly;
 }
 
 .gearHeader{
@@ -128,47 +134,64 @@ a{
     margin-bottom: 2vh;
     margin-top: 15vh;
 }
-.mics{
-    grid-area:s1 ;
+#gear{
     display: flex;
+    flex-direction:  column;
+    padding : 3vw;
+   
+}
+.mics{
+
 }
 
 .amps{
-    grid-area:s2 ;
+
     display: flex;
 }
 
 .outboard{
-    grid-area:s3 ;
+    
     display: flex;
 }
 
 .drums{
-    grid-area:s4 ;
+
     display: flex;
+}
+
+.closed{
+    /* height : 10%; */
+}
+ .closed > h4, .closed > .gi {
+    display: none;
 }
 
 
 .gi{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     /* justify-content:  */
     position: relative;
-    width: 90%;
+    width: 100%;
     height: 90%;
     /* background-color: #bbbbbb; */
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
-    padding: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+    
 }
 
-.gi h4{
+.gear h4{
     font-family: Georgia, Times, 'Times New Roman', serif;
     font-size: 6vw;
     color: #f2efe9; 
-    margin-top: 0;
-    margin-bottom: 0;
+    /* margin-top: 0;
+    margin-bottom: 0; */
+    margin-block-start: 0;
+    margin-block-end: 0;
+
 }
 
 li{
@@ -243,8 +266,9 @@ li p{
     }
     h3{
         font-size: 3vw;
+        
     }
-    .gi h4{
+    .gear h4{
         font-size: 3vw;
     }
 
@@ -349,6 +373,14 @@ li p{
         margin-top:  71vh;
   }
   
+  ul{
+    list-style-type: none;
+    margin-left: 4vw  ;
+    margin-right: 4vw;
+    padding: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
   /* The dots/bullets/indicators */
   .dot {
     cursor: pointer;

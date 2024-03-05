@@ -26,3 +26,21 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+function toggleDropdown(element) {
+  console.log(element);
+  element.classList.toggle("closed");
+}
+
+// add event listener to close and open gear dropdown on click
+var gear = document.getElementsByClassName("dropdown")
+for (var i = 0; i < gear.length; i++) {
+  toggleDropdown(gear[i]);
+
+
+    gear[i].addEventListener("click", (event) => {
+      console.log(event)
+      toggleDropdown(event.srcElement);
+    });
+  
+}

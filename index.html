@@ -19,7 +19,7 @@
     <div class="aboutMe">
             <h2 class="mainHead onscroll">About Me</h2>
             <p class="subtitle onscroll">
-                With almost a decade experience in the local music scene, I've worked with a wide variety of genres and artists. I'm always looking for new projects to work on, so don't hesitate to contact me!
+                With almost a decade experience in the local music scene, I've worked with a wide variety of genres and artists. I'm always looking for new projects to work on, so don't hesitate to <a> contact me!</a> 
             </p>
     </div>
     <div class="discography">
@@ -144,9 +144,10 @@
     </h2>
     <div class="gear ">
        
-        <a class="mics ">
-            <div class="gi ">
-                <h3 class = "onscroll">Mics</h3>
+        <a class="mics dropdown" id="gear" >
+            <h3 class = "onscroll">Mics</h3>
+            <div class="gi " id="dropdown">
+                
                 <ul data-rte-list="default">
                     <li class = "onscroll">
                         <p class="" style="white-space:pre-wrap;">Neumann TLM-103&nbsp;</p>
@@ -166,6 +167,9 @@
                     <li class = "onscroll" >
                         <p class="" style="white-space:pre-wrap;">Akg D112</p>
                     </li>
+                </ul>
+                <ul data-rte-list="default">
+                
                     <li class = "onscroll">
                         <p class="" style="white-space:pre-wrap;">Audix D6</p>
                     </li>
@@ -185,15 +189,15 @@
                         <p class="" style="white-space:pre-wrap;">4x Line Audio CM3&nbsp;</p>
                     </li>
                     <li class = "onscroll">
-                        <p class="" style="white-space:pre-wrap;">2x Sennheiser MD421-II</p>
+                        <p class="" style="white-space:pre-wrap;">2x Sennheiser MD421</p>
                     </li>
                 </ul>
             </div>
         </a>
-        <a class="amps ">
-            <div class="gi ">
-                <h3 class = "onscroll">Amps</h3>
-                <h4 class = "onscroll">Guitar amps</h4>
+        <a class="amps  dropdown" id="gear">
+            <h3 class = "onscroll">Amps</h3>
+            <h4 class = "onscroll">Guitar amps</h4>
+            <div class="gi " id="">
                 <ul data-rte-list="default">
                     <li class = "onscroll">
                         <p class="" style="white-space:pre-wrap;">Peavey Standard&nbsp;</p>
@@ -228,7 +232,10 @@
                             <p class="" style="white-space:pre-wrap;">Peavey 5150 / 6505 </p>
                         </li>
                         </ul>
-                <h4 class = "onscroll">Bass amps</h4>
+                
+            </div>
+            <h4 class = "onscroll">Bass amps</h4>
+            <div class="gi " id="dropdown">
                 <ul data-rte-list="default">
                    <li class = "onscroll">
                         <p class="" style="white-space:pre-wrap;">Peavey Century 200&nbsp;</p>
@@ -243,7 +250,9 @@
                         <p class="" style="white-space:pre-wrap;">Peavey Musician Bass</p>
                     </li>
                 </ul>
+            </div>
                 <h4 class = "onscroll">Cabs</h4>
+            <div class="gi " id="dropdown">
                 <ul data-rte-list="default">
                    <li class = "onscroll">
                         <p class="" style="white-space:pre-wrap;">Marshall JCM-800 ‘86 </p>
@@ -263,10 +272,10 @@
                 </ul>
             </div>
         </a>
-        <a class="drums ">
-            <div class="gi ">
-                <h3 class = "onscroll">Instruments</h3>
-                <h4 class = "onscroll">Drums</h4>
+        <a class="drums  dropdown" id="gear">
+            <h3 class = "onscroll">Instruments</h3>
+            <h4 class = "onscroll">Drums</h4>
+            <div class="gi " id="dropdown3.1">
                 <ul data-rte-list="default">
                    <li class = "onscroll">
                         <p class="" style="white-space:pre-wrap;">80’s Tama Swingstar </p>
@@ -286,22 +295,26 @@
                         <p class="" style="white-space:pre-wrap;">Misc. cymbals </p>
                     </li>
                 </ul>
-                <h4 class = "onscroll">Guitars</h4>
+            </div>
+            <h4 class = "onscroll">Guitars</h4>
+            <div class="gi " id="dropdown">
                 <ul data-rte-list="default ">
-                   <li class = "onscroll">
-                        <p class="" style="white-space:pre-wrap;">80’s Yamaha Lord Player&nbsp;</p>
-                    </li>
-                   <li class = "onscroll">
-                        <p class="" style="white-space:pre-wrap;">Fender Stratocaster (USA) </p>
-                    </li>
-                   <li class = "onscroll">
-                        <p class="" style="white-space:pre-wrap;">Peavey T-60</p>
-                    </li>
-                   <li class = "onscroll">
-                        <p class="" style="white-space:pre-wrap;">Fender Jazzmaster </p>
-                    </li>
-                </ul>
-                <h4 class = "onscroll">Basses</h4>
+                    <li class = "onscroll">
+                            <p class="" style="white-space:pre-wrap;">80’s Yamaha Lord Player&nbsp;</p>
+                        </li>
+                    <li class = "onscroll">
+                            <p class="" style="white-space:pre-wrap;">Fender Stratocaster (USA) </p>
+                        </li>
+                    <li class = "onscroll">
+                            <p class="" style="white-space:pre-wrap;">Peavey T-60</p>
+                        </li>
+                    <li class = "onscroll">
+                            <p class="" style="white-space:pre-wrap;">Fender Jazzmaster </p>
+                        </li>
+                    </ul>
+            </div>
+            <h4 class = "onscroll">Basses</h4>
+            <div class="gi " id="dropdown">
                 <ul data-rte-list="default">
                    <li class = "onscroll">
                         <p class="" style="white-space:pre-wrap;">Ibanez Roadstar&nbsp;</p>
@@ -310,29 +323,31 @@
                         <p class="" style="white-space:pre-wrap;">Fender Jazz bass (Mexico)<strong>&nbsp;</strong></p>
                     </li>
                 </ul>
-
-           
             </div>
         </a>
-        <a class="outboard ">
-            <div class="gi">
-                <h3 class = "onscroll">Other gear</h3>
-                
-                <h4 class = "onscroll">Monitors</h4>
-                    <ul>
-                       <li class = "onscroll">
-                            <p class="" style="white-space:pre-wrap;">Dynaudio BM15A</p>
-                        </li>
-                    </ul>
-                <h4 class = "onscroll">Console</h4>
-                    <ul>
-                       <li class = "onscroll">
-                            <p class="" style="white-space:pre-wrap;">Soundtracs MR24</p>
-                        </li>
-                    </ul>
-                 <h4 class = "onscroll">Outboard</h4>
-
+        <a class="outboard dropdown" id="gear">
+            <h3 class = "onscroll">Other gear</h3>
+            <h4 class = "onscroll">Monitors</h4>
+            <div class="gi" id="dropdown">
+                <ul>
+                    <li class = "onscroll">
+                        <p class="" style="white-space:pre-wrap;">Dynaudio BM15A</p>
+                    </li>
+                </ul>
             </div>
+            <h4 class = "onscroll">Console</h4>
+            <div class="gi" id="dropdown">
+                <ul>
+                    <li class = "onscroll">
+                        <p class="" style="white-space:pre-wrap;">Soundtracs MR24</p>
+                    </li>
+                </ul>
+                
+            </div>
+            <!-- <h4 class = "onscroll">Outboard</h4>
+            <div class="gi" id="dropdown">
+                <ul>
+                    <li class = "onscroll -->
         </a>
 
     </div>
