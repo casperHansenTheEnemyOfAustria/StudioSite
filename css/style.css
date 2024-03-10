@@ -122,7 +122,7 @@ a{
     /* margin-left: 7vw; */
     margin-right: 7vw;
     /* height: 300vh; */
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
 }
 
 .gearHeader{
@@ -134,7 +134,7 @@ a{
     margin-bottom: 2vh;
     margin-top: 15vh;
 }
-#gear{
+.dropdown{
     display: flex;
     flex-direction:  column;
     padding : 3vw;
@@ -160,11 +160,52 @@ a{
 }
 
 .closed{
-    /* height : 10%; */
+    display: none !important;
+    height : 10%;
+    transition:  display ease-in-out 1s;
+
 }
- .closed > h4, .closed > .gi {
+ /* .closed > h4, .closed > .gi {
     display: none;
+    height : 0vh;
+    transition:  ease-out 1s;
+} */
+
+.preview{
+    display: flex;
+    flex-direction: row;
+    /* justify-content:  */
+    position: relative;
+    width: 100%;
+    height: 90%;
+    /* background-color: #bbbbbb; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    padding-left: 2px;
+    padding-right: 2px;
 }
+.preview button{
+    width: 2vh;
+    height: 2vh;
+    background-color: #f2efe9;
+    border: none;
+    cursor: pointer;
+    font-size: 0vh;
+    color: #094117;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    transition: background-color 0.5s;
+
+}
+
+.preview button:hover{
+    background-color: #94a598;
+    color: #f2efe9;
+}
+
 
 
 .gi{
@@ -269,7 +310,7 @@ li p{
         
     }
     .gear h4{
-        font-size: 3vw;
+        font-size: 2vw;
     }
 
 
