@@ -28,27 +28,27 @@ function showSlides(n) {
 }
 
 function toggleDropdown(element) {
-  console.log(element.childNodes);
 
-   for (let i = 0; i < element.childNodes.length; (i++)){
-    if (element.childNodes[i].nodeName != "#text" && element.childNodes[i].nodeName != "#comment")
-    {
-      if(element.childNodes[i].classList.contains("gi")){
-        element.childNodes[i].classList.toggle("closed");
-      }
-      
-     console.log(i);
-    }
-     
-    }
+
+        element.classList.toggle("closed");
+        
+ 
 }
 
 // add event listener to close and open gear dropdown on click
 for (let i = 0; i < document.getElementsByClassName("dropdown").length; i++) {
   ass = 
-  console.log('dropdown' + (i+1));
+
   document.getElementById("dropdownButton" + (i+1)).addEventListener("click", function() {
-    toggleDropdown(document.getElementById("dropdown" + (i+1)));}); 
+    toggleDropdown(document.getElementById("dropdown" + (i+1)));
+
+    button = document.getElementById("dropdownButton" + (i+1));
+    console.log(button);
+    
+    button.classList.toggle("down");
+      
+    
+  }); 
 
   toggleDropdown(document.getElementById("dropdown" + (i+1)));
 } 
